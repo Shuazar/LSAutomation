@@ -10,7 +10,7 @@ namespace LSAutomation
         [TestMethod]
         public void TestMethod1()
         {
-            var brawser = new ChromeBrowser();
+            var browser = new ChromeBrowser();
         }
     }
 }

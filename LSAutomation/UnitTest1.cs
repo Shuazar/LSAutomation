@@ -13,6 +13,7 @@ namespace LSAutomation
         {
             var browser = new ChromeBrowser();
             var tt = string.Empty;
+            var tt1 = string.Empty;
         }
     }
 }

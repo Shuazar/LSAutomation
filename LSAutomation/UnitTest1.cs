@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 using LSAutomation.Browsers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -11,6 +12,7 @@ namespace LSAutomation
         public void TestMethod1()
         {
             var browser = new ChromeBrowser();
+            var tt = string.Empty;
         }
     }
 }

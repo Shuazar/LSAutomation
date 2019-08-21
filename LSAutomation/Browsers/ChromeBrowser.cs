@@ -19,7 +19,7 @@ namespace LSAutomation.Browsers
         public ChromeBrowser(string description, IWebDriver webDriver, TestExecutionScopesManager testExecutionScopesManager) : base(description, webDriver, testExecutionScopesManager)
         {
         }
-        public static IWebDriver GetDriver()
+        private static IWebDriver GetDriver()
         {
             ChromeOptions options = new ChromeOptions();
             options.AddArguments("--start-maximized");

@@ -35,6 +35,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DnsClient, Version=1.0.7.0, Culture=neutral, PublicKeyToken=4574bb5573c51424, processorArchitecture=MSIL">
+      <HintPath>..\packages\DnsClient.1.0.7\lib\net45\DnsClient.dll</HintPath>
+    </Reference>
+    <Reference Include="ExtentReports, Version=4.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExtentReports.4.0.3\lib\ExtentReports.dll</HintPath>
+    </Reference>
     <Reference Include="JetBrains.Annotations, Version=2018.2.1.0, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL">
       <HintPath>..\packages\JetBrains.Annotations.2018.2.1\lib\net20\JetBrains.Annotations.dll</HintPath>
       <Private>True</Private>
@@ -43,8 +49,34 @@
       <HintPath>..\packages\VS.QualityTools.UnitTestFramework.15.0.27323.2\lib\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="MongoDB.Bson, Version=2.7.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Bson.2.7.2\lib\net45\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=2.7.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.2.7.2\lib\net45\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core, Version=2.7.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.Core.2.7.2\lib\net45\MongoDB.Driver.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RazorEngine, Version=3.10.0.0, Culture=neutral, PublicKeyToken=9ee697374c7e744a, processorArchitecture=MSIL">
+      <HintPath>..\packages\RazorEngine.3.10.0\lib\net45\RazorEngine.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.3.0\lib\netstandard1.1\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.0.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.0.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="TestAutomationEssentials.Common, Version=1.3.7009.27214, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\TestAutomationEssentials.Common.1.3.7009.27214\lib\net45\TestAutomationEssentials.Common.dll</HintPath>
       <Private>True</Private>
@@ -75,15 +107,40 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
+    <Compile Include="Automation.cs" />
+    <Compile Include="BrowsersFactory\Browser.cs" />
+    <Compile Include="BrowsersFactory\ChromeBrowser.cs" />
     <Compile Include="Browsers\ChromeBrowser.cs" />
     <Compile Include="Browsers\FireFoxBrowser.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="Domains\DomainBase.cs" />
+    <Compile Include="Domains\HomeDomain.cs" />
+    <Compile Include="Extensions\XDocumentExtensions.cs" />
+    <Compile Include="Factories\BrowserFactory.cs" />
+    <Compile Include="Factories\ConfigurationFactory.cs" />
+    <Compile Include="Factories\UserFactory.cs" />
+    <Compile Include="Factories\XmlHelper.cs" />
+    <Compile Include="Models\ConfigurationInfo.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Pages\Facebook\FacebookHomePage.cs" />
+    <Compile Include="Pages\PageBase.cs" />
+    <Compile Include="Processes\ClickBankScenarios.cs" />
+    <Compile Include="Processes\FaceBookScenarios.cs" />
+    <Compile Include="Report\ExtentReportLogger.cs" />
+    <Compile Include="Report\ReportsPathFactory.cs" />
+    <Compile Include="TestBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BrowserConfiguration\Chrome\ChromeBrowserConfiguration.xml" />
+    <Content Include="ClickBankConfiguration\ClickBankConfiguration.xml" />
+    <Content Include="ClickBankUsers\ClickBankUsers.xml" />
+    <Content Include="FaceBookConfiguration\FaceBookConfiguration.xml" />
+    <Content Include="FacebookUsers\FacebookUsers.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="WebDrivers\chromedriver.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -1,11 +1,10 @@
 ﻿using System;
-using System.Runtime.InteropServices;
-using LSAutomation.Browsers;
+using Common.BrowserFactory;
+using Common.Report;
 using LSAutomation.Factories;
 using LSAutomation.Models;
-using LSAutomation.Report;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using OpenQA.Selenium;
+
 
 namespace LSAutomation
 {
@@ -14,7 +13,8 @@ namespace LSAutomation
     public abstract class TestBase
     {
         private static string ReportsFolder { get; set; }
-        protected static ConfigurationInfo ConfigInfo { get; set; }
+        protected static ConfigurationInfo ConfigInfoFaceBook { get; set; }
+        protected static ConfigurationInfo ConfigInfoClickBank { get; set; }
         public TestContext TestContext { get; set; }
         protected static Automation Automation { get; private set; }
         private bool TestFail = false;
@@ -26,8 +26,9 @@ namespace LSAutomation
         [AssemblyInitialize]
         public static void AssemblyInitialize(TestContext testContext)
         {
-            ConfigInfo = ConfigurationFactory.GetConfiguration();
-            ReportsFolder = ReportsPathFactory.CreateTestFolderForReport(testContext.TestName, ConfigInfo.ReportFolder);
+            ConfigInfoFaceBook = ConfigurationFactory.GetConfigurationFaceBook();
+            ConfigInfoClickBank = ConfigurationFactory.GetConfigurationClickBank();
+            ReportsFolder = ReportsPathFactory.CreateTestFolderForReport(testContext.TestName, ConfigInfoFaceBook.ReportFolder);
         }
 
         [TestInitialize]
@@ -47,7 +48,7 @@ namespace LSAutomation
         {
             try
             {
-                Automation = new Automation(ConfigInfo, BrowserFactory.GetBrowser());
+                Automation = new Automation(ConfigInfoFaceBook, BrowserFactory.GetBrowser());
                 scenario();
             }
             catch (Exception ex)

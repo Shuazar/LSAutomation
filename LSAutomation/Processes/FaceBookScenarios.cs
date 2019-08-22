@@ -1,11 +1,11 @@
 ﻿using LSAutomation.Factories;
-using LSAutomation.Report;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Common.Report;
 
 namespace LSAutomation.Processes
 {

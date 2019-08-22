@@ -67,3 +67,47 @@ C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\D
 C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\Debug\RazorEngine.xml
 C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\Debug\System.Web.Razor.xml
+F:\GitProjects\LSAutomation\LSAutomation\obj\Debug\LSAutomation.csprojResolveAssemblyReference.cache
+F:\GitProjects\LSAutomation\LSAutomation\obj\Debug\LSAutomation.dll
+F:\GitProjects\LSAutomation\LSAutomation\obj\Debug\LSAutomation.pdb
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\FacebookUsers\FacebookUsers.xml
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\WebDrivers\chromedriver.exe
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\LSAutomation.dll
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\LSAutomation.pdb
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\Common.dll
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\DnsClient.dll
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\ExtentReports.dll
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\JetBrains.Annotations.dll
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\MongoDB.Bson.dll
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\MongoDB.Driver.Core.dll
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\MongoDB.Driver.dll
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\Newtonsoft.Json.dll
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\RazorEngine.dll
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\System.Buffers.dll
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\System.Web.Razor.dll
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\TestAutomationEssentials.Common.dll
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\TestAutomationEssentials.MSTest.dll
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\TestAutomationEssentials.Selenium.dll
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\WebDriver.dll
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\WebDriver.Support.dll
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\Common.pdb
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\DnsClient.xml
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\JetBrains.Annotations.xml
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\MongoDB.Bson.xml
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\MongoDB.Driver.xml
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\MongoDB.Driver.Core.xml
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\Newtonsoft.Json.pdb
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\Newtonsoft.Json.xml
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\RazorEngine.xml
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\System.Web.Razor.xml
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\TestAutomationEssentials.Common.pdb
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\TestAutomationEssentials.Common.xml
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\TestAutomationEssentials.MSTest.pdb
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\TestAutomationEssentials.MSTest.xml
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\TestAutomationEssentials.Selenium.pdb
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\TestAutomationEssentials.Selenium.xml
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\WebDriver.xml
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\WebDriver.Support.xml
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\BrowserConfiguration\Chrome\BrowserConfiguration.xml

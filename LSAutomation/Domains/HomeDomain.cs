@@ -1,10 +1,5 @@
 ﻿using LSAutomation.Models;
 using LSAutomation.Pages.Facebook;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LSAutomation.Domains
 {
@@ -16,7 +11,6 @@ namespace LSAutomation.Domains
         }
         public void Login(User user)
         {
-
             var homePage = new FaceBookHomePage(Automation.Browser);
             homePage.Login(user);
         }

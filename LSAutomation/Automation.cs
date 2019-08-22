@@ -1,19 +1,15 @@
-﻿using LSAutomation.BrowsersFactory;
+﻿
 using LSAutomation.Domains;
 using LSAutomation.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Common;
 
 namespace LSAutomation
 {
     public class Automation
     {
-        public ConfigurationInfo ConfigurationInfo { get; set; }
-        public Browser Browser { get; set; }
-        public HomeDomain HomeDomain { get; set; }
+        public ConfigurationInfo ConfigurationInfo { get;  }
+        public Browser Browser { get;  }
+        public HomeDomain HomeDomain { get;  }
 
         public Automation(ConfigurationInfo configurationInfo, Browser browser)
         {

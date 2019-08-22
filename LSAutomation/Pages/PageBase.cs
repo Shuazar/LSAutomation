@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using Browser = Common.Browser;
 namespace LSAutomation.Pages
 {
-   public class PageBase
-    {
-    }
+   public abstract class PageBase
+   {
+       protected Browser Browser { get; }
+
+       protected PageBase(Browser browser)
+       {
+           Browser = browser;
+       }
+   }
 }

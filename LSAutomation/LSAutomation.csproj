@@ -108,14 +108,9 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Automation.cs" />
-    <Compile Include="BrowsersFactory\Browser.cs" />
-    <Compile Include="BrowsersFactory\ChromeBrowser.cs" />
-    <Compile Include="Browsers\ChromeBrowser.cs" />
-    <Compile Include="Browsers\FireFoxBrowser.cs" />
     <Compile Include="Domains\DomainBase.cs" />
     <Compile Include="Domains\HomeDomain.cs" />
     <Compile Include="Extensions\XDocumentExtensions.cs" />
-    <Compile Include="Factories\BrowserFactory.cs" />
     <Compile Include="Factories\ConfigurationFactory.cs" />
     <Compile Include="Factories\UserFactory.cs" />
     <Compile Include="Factories\XmlHelper.cs" />
@@ -125,8 +120,6 @@
     <Compile Include="Pages\PageBase.cs" />
     <Compile Include="Processes\ClickBankScenarios.cs" />
     <Compile Include="Processes\FaceBookScenarios.cs" />
-    <Compile Include="Report\ExtentReportLogger.cs" />
-    <Compile Include="Report\ReportsPathFactory.cs" />
     <Compile Include="TestBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -134,10 +127,12 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BrowserConfiguration\Chrome\ChromeBrowserConfiguration.xml" />
-    <Content Include="ClickBankConfiguration\ClickBankConfiguration.xml" />
+    <Content Include="BrowserConfiguration\Chrome\BrowserConfiguration.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ClickBankConfiguration\ConfigurationClickBank.xml" />
     <Content Include="ClickBankUsers\ClickBankUsers.xml" />
-    <Content Include="FaceBookConfiguration\FaceBookConfiguration.xml" />
+    <Content Include="FaceBookConfiguration\ConfigurationFaceBook.xml" />
     <Content Include="FacebookUsers\FacebookUsers.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

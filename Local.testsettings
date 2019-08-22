@@ -2,12 +2,12 @@
 <TestSettings name="Local" id="eb18bbfc-bae7-4220-9280-ace9b8ca6d2c" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
   <Description>These are default test settings for a local test run.</Description>
   <Deployment>
-    <DeploymentItem filename="LSAutomation\BrowserConfiguration\Chrome\ChromeBrowserConfiguration.xml" />
+    <DeploymentItem filename="LSAutomation\FaceBookConfiguration\ConfigurationFaceBook.xml" />
     <DeploymentItem filename="LSAutomation\ClickBankUsers\ClickBankUsers.xml" />
-    <DeploymentItem filename="LSAutomation\FaceBookConfiguration\FaceBookConfiguration.xml" />
     <DeploymentItem filename="LSAutomation\WebDrivers\chromedriver.exe" />
+    <DeploymentItem filename="LSAutomation\ClickBankConfiguration\ConfigurationClickBank.xml" />
+    <DeploymentItem filename="LSAutomation\BrowserConfiguration\Chrome\BrowserConfiguration.xml" />
     <DeploymentItem filename="LSAutomation\FacebookUsers\FacebookUsers.xml" />
-    <DeploymentItem filename="LSAutomation\ClickBankConfiguration\ClickBankConfiguration.xml" />
   </Deployment>
   <Execution>
     <TestTypeSpecific>

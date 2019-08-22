@@ -108,10 +108,12 @@
     <Compile Include="Browser.cs" />
     <Compile Include="BrowserFactory\BrowserFactory.cs" />
     <Compile Include="BrowserFactory\ChromeBrowser.cs" />
+    <Compile Include="Enums\Alert.cs" />
     <Compile Include="Exstentions\XDocumentExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Report\ReportManager.cs" />
     <Compile Include="Report\ReportsPathFactory.cs" />
+    <Compile Include="Retry.cs" />
     <Compile Include="WebElement.cs" />
     <Compile Include="WebElementExtentions.cs" />
   </ItemGroup>

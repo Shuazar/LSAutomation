@@ -1,6 +1,8 @@
 ﻿using LSAutomation.Factories;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Common.Report;
+using System.Linq;
+using LSAutomation.Enums;
 
 namespace LSAutomation.Processes
 {
@@ -12,10 +14,10 @@ namespace LSAutomation.Processes
         {
             ExcuteScenario(() =>
             {
-                var user = UserFactory.GetUser();
+                var user = UserFactory.GetClickBankUsers();
                 ReportManager.Report.Test.Info($"Use name {user.Username}");
-                Automation.Browser.NavigateToUrl(Automation.ConfigurationInfo.Url);
-                Automation.HomeDomain.Login(user);
+                Automation.HomeDomain.OpenHomePage(ConfigurationInfo.Where(conf => conf.Name.Equals(ConfigurationEnums.ClickBank)).FirstOrDefault());
+                Automation.HomeDomain.Login(user, ConfigurationInfo.Where(conf => conf.Name.Equals(ConfigurationEnums.ClickBank)).FirstOrDefault());
             });
 
         }

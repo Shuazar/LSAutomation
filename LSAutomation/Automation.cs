@@ -2,6 +2,7 @@
 using LSAutomation.Domains;
 using LSAutomation.Models;
 using Common;
+using System.Collections.Generic;
 
 namespace LSAutomation
 {
@@ -10,13 +11,15 @@ namespace LSAutomation
         public ConfigurationInfo ConfigurationInfo { get;  }
         public Browser Browser { get;  }
         public HomeDomain HomeDomain { get;  }
-
-        public Automation(ConfigurationInfo configurationInfo, Browser browser)
+        public List<ConfigurationInfo> ConfigurationList { get;}
+        public Automation(List<ConfigurationInfo> configurationInfoList, Browser browser)
         {
-            ConfigurationInfo = configurationInfo;
+            ConfigurationList = configurationInfoList;
             Browser = browser;
             HomeDomain = new HomeDomain(this);
         }
+
+
 
     }
 }

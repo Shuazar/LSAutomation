@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Common.BrowserFactory;
 using Common.Report;
 using LSAutomation.Factories;
@@ -17,6 +18,7 @@ namespace LSAutomation
         protected static ConfigurationInfo ConfigInfoClickBank { get; set; }
         public TestContext TestContext { get; set; }
         protected static Automation Automation { get; private set; }
+        protected static List<ConfigurationInfo> ConfigurationInfo { get; private set; }
         private bool TestFail = false;
         protected TestBase()
         {
@@ -29,6 +31,11 @@ namespace LSAutomation
             ConfigInfoFaceBook = ConfigurationFactory.GetConfigurationFaceBook();
             ConfigInfoClickBank = ConfigurationFactory.GetConfigurationClickBank();
             ReportsFolder = ReportsPathFactory.CreateTestFolderForReport(testContext.TestName, ConfigInfoFaceBook.ReportFolder);
+            ConfigurationInfo = new List<ConfigurationInfo>();
+            ConfigurationInfo.Add(ConfigInfoFaceBook);
+            ConfigurationInfo.Add(ConfigInfoClickBank);
+
+
         }
 
         [TestInitialize]
@@ -48,7 +55,7 @@ namespace LSAutomation
         {
             try
             {
-                Automation = new Automation(ConfigInfoFaceBook, BrowserFactory.GetBrowser());
+                Automation = new Automation(ConfigurationInfo, BrowserFactory.GetBrowser());
                 scenario();
             }
             catch (Exception ex)

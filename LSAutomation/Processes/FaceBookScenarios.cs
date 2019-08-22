@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Common.Report;
+using LSAutomation.Enums;
 
 namespace LSAutomation.Processes
 {
@@ -17,10 +18,10 @@ namespace LSAutomation.Processes
         {
             ExcuteScenario(() =>
             {
-                var user = UserFactory.GetUser();
+                var user = UserFactory.GetFacebookUsers();
                 ReportManager.Report.Test.Info($"Use name {user.Username}");
-                Automation.Browser.NavigateToUrl(Automation.ConfigurationInfo.Url);
-                Automation.HomeDomain.Login(user);
+                Automation.HomeDomain.OpenHomePage(ConfigurationInfo.Where(conf => conf.Name.Equals(ConfigurationEnums.FaceBook)).FirstOrDefault());
+                Automation.HomeDomain.Login(user, ConfigurationInfo.Where(conf => conf.Name.Equals(ConfigurationEnums.FaceBook)).FirstOrDefault());
             });
 
         }

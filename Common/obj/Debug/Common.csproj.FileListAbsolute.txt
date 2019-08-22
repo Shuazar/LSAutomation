@@ -82,3 +82,21 @@ F:\GitProjects\LSAutomation\Common\bin\Debug\Newtonsoft.Json.pdb
 F:\GitProjects\LSAutomation\Common\bin\Debug\Newtonsoft.Json.xml
 F:\GitProjects\LSAutomation\Common\bin\Debug\RazorEngine.xml
 F:\GitProjects\LSAutomation\Common\bin\Debug\System.Web.Razor.xml
+C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\Common\bin\Debug\DnsClient.dll
+C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\Common\bin\Debug\ExtentReports.dll
+C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\Common\bin\Debug\MongoDB.Bson.dll
+C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\Common\bin\Debug\MongoDB.Driver.Core.dll
+C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\Common\bin\Debug\MongoDB.Driver.dll
+C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\Common\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\Common\bin\Debug\RazorEngine.dll
+C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\Common\bin\Debug\System.Buffers.dll
+C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\Common\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\Common\bin\Debug\System.Web.Razor.dll
+C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\Common\bin\Debug\DnsClient.xml
+C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\Common\bin\Debug\MongoDB.Bson.xml
+C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\Common\bin\Debug\MongoDB.Driver.xml
+C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\Common\bin\Debug\MongoDB.Driver.Core.xml
+C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\Common\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\Common\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\Common\bin\Debug\RazorEngine.xml
+C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\Common\bin\Debug\System.Web.Razor.xml

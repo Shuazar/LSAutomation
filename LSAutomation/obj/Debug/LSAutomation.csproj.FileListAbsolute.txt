@@ -111,3 +111,4 @@ F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\TestAutomationEssentials.Sele
 F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\WebDriver.xml
 F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\WebDriver.Support.xml
 F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\BrowserConfiguration\Chrome\BrowserConfiguration.xml
+C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\Debug\BrowserConfiguration\Chrome\BrowserConfiguration.xml

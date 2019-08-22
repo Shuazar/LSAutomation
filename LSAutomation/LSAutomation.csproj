@@ -110,13 +110,17 @@
     <Compile Include="Automation.cs" />
     <Compile Include="Domains\DomainBase.cs" />
     <Compile Include="Domains\HomeDomain.cs" />
+    <Compile Include="Enums\ConfigurationEnums.cs" />
     <Compile Include="Extensions\XDocumentExtensions.cs" />
     <Compile Include="Factories\ConfigurationFactory.cs" />
     <Compile Include="Factories\UserFactory.cs" />
     <Compile Include="Factories\XmlHelper.cs" />
     <Compile Include="Models\ConfigurationInfo.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="Pages\ClickBank\ClickBankHomePage.cs" />
     <Compile Include="Pages\Facebook\FacebookHomePage.cs" />
+    <Compile Include="Pages\HomePageBase.cs" />
+    <Compile Include="Pages\HomePageFactory.cs" />
     <Compile Include="Pages\PageBase.cs" />
     <Compile Include="Processes\ClickBankScenarios.cs" />
     <Compile Include="Processes\FaceBookScenarios.cs" />

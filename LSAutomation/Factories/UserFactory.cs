@@ -10,7 +10,7 @@ namespace LSAutomation.Factories
 {
    public static class UserFactory
     {
-        public static User GetUser()
+        public static User GetFacebookUsers()
         {
             var document = XDocument.Load("FacebookUsers.xml");
             var user = new User();
@@ -24,5 +24,22 @@ namespace LSAutomation.Factories
             }
             return user;
         }
+
+        public static User GetClickBankUsers()
+        {
+            var document = XDocument.Load("ClickBankUsers.xml");
+            var user = new User();
+            foreach (var userData in document.Root.Elements("User"))
+            {
+
+                var userName = userData.Attribute("username").Value;
+                user.Username = userName;
+                var password = userData.Attribute("password").Value;
+                user.Password = password;
+            }
+            return user;
+        }
+
+
     }
 }

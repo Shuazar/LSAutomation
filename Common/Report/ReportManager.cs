@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using AventStack.ExtentReports;
 using AventStack.ExtentReports.Reporter;
 
@@ -62,6 +58,12 @@ namespace Common.Report
         {
             Test.Fail(ConvertToHtml(exception));
         }
+
+        public void Fail(string message)
+        {
+            Test.Fail(message);
+        }
+
         public void StepSucceeded()
         {
             Test.Pass("Step was success");

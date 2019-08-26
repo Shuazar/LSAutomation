@@ -16,6 +16,7 @@ namespace LSAutomation.Pages
         }
         public abstract void OpenHomePage(string url);
         public abstract void Login(User user);
-       
+        public abstract string GetDataSiteKey();
+
     }
 }

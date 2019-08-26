@@ -16,8 +16,8 @@ namespace LSAutomation.Processes
             {
                 var user = UserFactory.GetClickBankUsers();
                 ReportManager.Report.Test.Info($"Use name {user.Username}");
-                Automation.HomeDomain.OpenHomePage(ConfigurationInfo.Where(conf => conf.Name.Equals(ConfigurationEnums.ClickBank)).FirstOrDefault());
-                Automation.HomeDomain.Login(user, ConfigurationInfo.Where(conf => conf.Name.Equals(ConfigurationEnums.ClickBank)).FirstOrDefault());
+                Automation.HomeDomain.OpenHomePage(ConfigurationInfo.FirstOrDefault(conf => conf.Name.Equals(ConfigurationEnums.ClickBank)));
+                Automation.HomeDomain.Login(user, ConfigurationInfo.FirstOrDefault(conf => conf.Name.Equals(ConfigurationEnums.ClickBank)));
             });
 
         }

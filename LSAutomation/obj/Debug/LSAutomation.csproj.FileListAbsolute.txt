@@ -67,13 +67,14 @@ C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\D
 C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\Debug\RazorEngine.xml
 C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\Debug\System.Web.Razor.xml
-F:\GitProjects\LSAutomation\LSAutomation\obj\Debug\LSAutomation.csprojResolveAssemblyReference.cache
-F:\GitProjects\LSAutomation\LSAutomation\obj\Debug\LSAutomation.dll
-F:\GitProjects\LSAutomation\LSAutomation\obj\Debug\LSAutomation.pdb
+C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\Debug\BrowserConfiguration\Chrome\BrowserConfiguration.xml
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\BrowserConfiguration\Chrome\BrowserConfiguration.xml
 F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\FacebookUsers\FacebookUsers.xml
 F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\WebDrivers\chromedriver.exe
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\LSAutomation.dll.config
 F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\LSAutomation.dll
 F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\LSAutomation.pdb
+F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\BestCaptchaSolverAPI.dll
 F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\Common.dll
 F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\DnsClient.dll
 F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\ExtentReports.dll
@@ -110,5 +111,6 @@ F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\TestAutomationEssentials.Sele
 F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\TestAutomationEssentials.Selenium.xml
 F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\WebDriver.xml
 F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\WebDriver.Support.xml
-F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\BrowserConfiguration\Chrome\BrowserConfiguration.xml
-C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\Debug\BrowserConfiguration\Chrome\BrowserConfiguration.xml
+F:\GitProjects\LSAutomation\LSAutomation\obj\Debug\LSAutomation.csprojResolveAssemblyReference.cache
+F:\GitProjects\LSAutomation\LSAutomation\obj\Debug\LSAutomation.dll
+F:\GitProjects\LSAutomation\LSAutomation\obj\Debug\LSAutomation.pdb

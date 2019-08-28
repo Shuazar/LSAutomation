@@ -18,6 +18,31 @@ namespace LSAutomation.Processes
                 ReportManager.Report.Test.Info($"Use name {user.Username}");
                 Automation.HomeDomain.OpenHomePage(ConfigurationInfo.FirstOrDefault(conf => conf.Name.Equals(ConfigurationEnums.ClickBank)));
                 Automation.HomeDomain.Login(user, ConfigurationInfo.FirstOrDefault(conf => conf.Name.Equals(ConfigurationEnums.ClickBank)));
+                Automation.MainMenuDomain.GoToMarketPlace();
+                Automation.MainMenuDomain.GoToArtNiche();
+                Automation.MainMenuDomain.GoToSeenOnTvNiche();
+                Automation.MainMenuDomain.GoToBettingNiche();
+                Automation.MainMenuDomain.GoToInvestingNiche();
+                Automation.MainMenuDomain.GoToInternetNiche();
+                Automation.MainMenuDomain.GoToCookingNiche();
+                Automation.MainMenuDomain.GoToEBusinessNiche();
+                Automation.MainMenuDomain.GoToEducationNiche();
+                Automation.MainMenuDomain.GoToJobsNiche();
+                Automation.MainMenuDomain.GoToFictionNiche();
+                Automation.MainMenuDomain.GoToGamesNiche();
+                Automation.MainMenuDomain.GoToGreenProductsNiche();
+                Automation.MainMenuDomain.GoToHealthNiche();
+                Automation.MainMenuDomain.GoToHomeNiche();
+                Automation.MainMenuDomain.GoToLanguagesNiche();
+                Automation.MainMenuDomain.GoToMobileNiche();
+                Automation.MainMenuDomain.GoToFamiliesNiche();
+                Automation.MainMenuDomain.GoToPoliticsNiche();
+                Automation.MainMenuDomain.GoToReferenceNish();
+                Automation.MainMenuDomain.GoToSelfHelpNiche();
+                Automation.MainMenuDomain.GoToSoftwareNiche();
+                Automation.MainMenuDomain.GoToSpiritualityNiche();
+                Automation.MainMenuDomain.GoToSportsNiche();
+                Automation.MainMenuDomain.GoToTravelNiche();
             });
 
         }

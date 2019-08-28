@@ -114,3 +114,5 @@ F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\WebDriver.Support.xml
 F:\GitProjects\LSAutomation\LSAutomation\obj\Debug\LSAutomation.csprojResolveAssemblyReference.cache
 F:\GitProjects\LSAutomation\LSAutomation\obj\Debug\LSAutomation.dll
 F:\GitProjects\LSAutomation\LSAutomation\obj\Debug\LSAutomation.pdb
+C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\Debug\LSAutomation.dll.config
+C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\Debug\BestCaptchaSolverAPI.dll

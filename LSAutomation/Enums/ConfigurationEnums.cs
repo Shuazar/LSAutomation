@@ -8,7 +8,8 @@ namespace LSAutomation.Enums
 {
     public struct ConfigurationEnums
     {
-        public const string ClickBank = "ClickBank";
+        public const string ClickBank = "ClickBank";       
         public const string FaceBook = "FaceBook";
+        
     }
 }

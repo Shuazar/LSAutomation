@@ -21,7 +21,7 @@ namespace LSAutomation.Pages
                         return new ClickBankHomePage(browser);
                     break;
                 case ConfigurationEnums.FaceBook:
-                    return new FaceBookHomePage(browser);
+                    return new FaceBookHomePage(browser);                                 
                     break;
             }
             return null;

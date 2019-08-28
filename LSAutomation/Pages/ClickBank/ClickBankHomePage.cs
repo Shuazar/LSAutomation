@@ -22,9 +22,10 @@ namespace LSAutomation.Pages.ClickBank
         public override void Login(User user)
         {
             Browser.WaitForElement(By.Id("nick"), "nick", 10).Text = user.Username;
-            Browser.WaitForElement(By.Id("pass"), "Password", 10).Text = user.Password;
-            Browser.WaitForElement(By.Id("login"), "login", 10).Click();         
+            Browser.WaitForElement(By.Id("pass"), "Password", 10).Text = user.Password;                    
+                      
             var siteKey = GetDataSiteKey();
+
             DebugHelper.VerboseMode = true;
             var captcha = new NoCaptchaProxyless
             {
@@ -41,7 +42,9 @@ namespace LSAutomation.Pages.ClickBank
             else
             {
                 DebugHelper.Out("Result: " + captcha.GetTaskSolution().GRecaptchaResponse, DebugHelper.Type.Success);
-                var hashcode = captcha.GetTaskSolution().GRecaptchaResponse;
+                var token = captcha.GetTaskSolution().GRecaptchaResponse;                
+                Browser.SetCaptchaToken(token);
+                Browser.CallBackFunction();
             }
             
         }

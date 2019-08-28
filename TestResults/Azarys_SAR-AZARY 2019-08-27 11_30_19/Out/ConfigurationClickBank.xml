@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+  <Name>ClickBank</Name>
+  <Url>https://accounts.clickbank.com/login.htm</Url>
+  <Language>en</Language>
+  <Country>Israel</Country>
+  <ReportFolder>C:/ClickBank</ReportFolder>
+</Configuration>

@@ -85,9 +85,7 @@ namespace Common
                 ReportManager.Report.Warning($"{ex.InnerException} <br> {ex.Message}");              
                 TryToNavigateToURL(url);
             }
-        }
-
-      
+        }     
         private List<string> GetOpenWindows()
         {
             try
@@ -98,16 +96,12 @@ namespace Common
             {
                 return new List<string>();
             }
-        }
-
-       
-
+        }  
         private void TryToNavigateToURL(string url)
         {
             ReportManager.Report.Info($"Navigate to '{url}'");
             base.NavigateToUrl(url);
         }
-
         public void WaitTillPageLoaded(IWebDriver driver)
         {
             var js = (IJavaScriptExecutor)driver;
@@ -115,7 +109,6 @@ namespace Common
             var result = Wait.IfNot(() => IsDocumentStateComplete(js).Item1, timeout);
             ReportManager.Report.Info($"Page loading status: document.readyState = {result}");
         }
-
         private static Tuple<bool, string> IsDocumentStateComplete(IJavaScriptExecutor js)
         {
             try
@@ -130,7 +123,6 @@ namespace Common
                 return new Tuple<bool, string>(false, "");
             }
         }
-
         public void WaitTillPageVisible(IWebDriver driver)
         {
             var js = (IJavaScriptExecutor)driver;
@@ -138,13 +130,11 @@ namespace Common
             var result = Wait.Until(() => IsDocumentStateVisible(js), r => r.Item1, timeout, $"The page failed to load in {timeout} minutes.");
             ReportManager.Report.Info($"The elements are visible: document.visibilityState = {result.Item2}");
         }
-
         public void RemoveElementFromPage(string element)
         {
             var js = (IJavaScriptExecutor)GetWebDriver();
             js.ExecuteScript(element);
         }
-
         private static Tuple<bool, string> IsDocumentStateVisible(IJavaScriptExecutor js)
         {
             try
@@ -161,12 +151,10 @@ namespace Common
         {
             _driver.Manage().Cookies.DeleteAllCookies();
         }
-
         public void MaximizeWindow()
         {
             _driver.Manage().Window.Maximize();
         }
-
         public void WaitUntillElementUnvisible(By @by)
         {
             try
@@ -175,8 +163,7 @@ namespace Common
                 wait.Until(ExpectedConditions.InvisibilityOfElementLocated(by));
             }
             catch (Exception ex) { }
-        }
-      
+        }     
         public bool IsElementDisplayed(By @by, int timeout = 60)
         {
             try
@@ -190,18 +177,14 @@ namespace Common
                 return false;
             }
         }
-
-
         public ReadOnlyCollection<IWebElement> WaitForIframesList(By @by, string description)
         {
             return _driver.FindElements(by);
         }
-
         public IReadOnlyCollection<WebElement> WaitForElements(By @by, string description)
         {
             return FindElements(by, description).ConvertToWebElements();
         }
-
         public bool FindElementWithAttribute(By @by, string attribute)
         {
             var flag = false;
@@ -226,17 +209,14 @@ namespace Common
             return flag;
 
         }
-
         public WebDriverWait CreateWait(int seconds)
         {
             return CreateWait(TimeSpan.FromSeconds(seconds));
-        }
-       
+        }       
         public void ClearLocalStorage()
         {
             ((IJavaScriptExecutor)_driver).ExecuteScript("window.localStorage.clear();");
         }
-
         public string GetLocalStorageItem(string key)
         {
 
@@ -436,6 +416,22 @@ namespace Common
         {
             var element = _driver.FindElements(elementBy).FirstOrDefault();
             return (string)((IJavaScriptExecutor)_driver).ExecuteScript("return arguments[0].innerHTML;", element);
+        }
+
+        public void SetValueToAttribute(IWebElement element , string attName, string attValue)
+        {
+            ((IJavaScriptExecutor)_driver).ExecuteScript("arguments[0].setAttribute(arguments[1], arguments[2]);",
+                element, attName, attValue);
+        }
+
+        public void SetCaptchaToken(string token)
+        {
+            ((IJavaScriptExecutor)_driver).ExecuteScript($"document.getElementById('g-recaptcha-response').innerHTML='{token}';");
+        }
+
+        public void CallBackFunction()
+        {
+            ((IJavaScriptExecutor)_driver).ExecuteScript("invisibleCaptchaResponse();");
         }
 
         public void PrintAllChildElements(WebElement rootElement)

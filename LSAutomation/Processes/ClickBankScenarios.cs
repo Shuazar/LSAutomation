@@ -43,6 +43,14 @@ namespace LSAutomation.Processes
                 Automation.MainMenuDomain.GoToSpiritualityNiche();
                 Automation.MainMenuDomain.GoToSportsNiche();
                 Automation.MainMenuDomain.GoToTravelNiche();
+                Automation.MarketPlaceDomain.ShowResultsByPopularity(ClickBankEnums.Popularity);
+                Automation.MarketPlaceDomain.ShowResultsByAvgDollarSale(ClickBankEnums.AvgDollarSale);
+                Automation.MarketPlaceDomain.ShowResultsByInitialDollarSale(ClickBankEnums.InitialDollarSale);
+                Automation.MarketPlaceDomain.ShowResultsByAvgPercentSale(ClickBankEnums.AvgPercentSale);
+                Automation.MarketPlaceDomain.ShowResultsByAvgRebillTotal(ClickBankEnums.AvgRebillTotal);
+                Automation.MarketPlaceDomain.ShowResultsByAvgPercentRebill(ClickBankEnums.AvgPercentRebill);
+                Automation.MarketPlaceDomain.ShowResultsByGravity(ClickBankEnums.Gravity);
+
             });
 
         }

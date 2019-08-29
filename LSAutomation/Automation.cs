@@ -13,6 +13,7 @@ namespace LSAutomation
         public Browser Browser { get; }
         public HomeDomain HomeDomain { get; }
         public MainMenuDomain  MainMenuDomain {get;}
+        public MarketPlaceDomain MarketPlaceDomain { get; }
         public List<ConfigurationInfo> ConfigurationList { get;}
         public Automation(List<ConfigurationInfo> configurationInfoList, Browser browser)
         {
@@ -20,6 +21,7 @@ namespace LSAutomation
             Browser = browser;
             HomeDomain = new HomeDomain(this);
             MainMenuDomain = new MainMenuDomain(this);
+            MarketPlaceDomain = new MarketPlaceDomain(this);
         }
 
 

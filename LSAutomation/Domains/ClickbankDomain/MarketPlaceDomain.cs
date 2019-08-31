@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LSAutomation.Models.ClickBank;
 
 namespace LSAutomation.Domains.ClickbankDomain
 {
@@ -15,75 +16,88 @@ namespace LSAutomation.Domains.ClickbankDomain
         {
 
         }
-       public void  ShowResultsByPopularity(ClickBankEnums clickBankEnums)
+
+        public void SortResultBy(SortResultBy resultBy)
         {
             MarketPlacePage marketPlacePage = new MarketPlacePage(Automation.Browser);
-
-            if (clickBankEnums.Equals(ClickBankEnums.Popularity))
-            {
-                marketPlacePage.ShowResultsByPopularity();
-            }
+            marketPlacePage.ShowResult(resultBy);
         }
 
-        public void ShowResultsByAvgDollarSale(ClickBankEnums clickBankEnums)
+        public List<Promote> GetPromotions()
         {
             MarketPlacePage marketPlacePage = new MarketPlacePage(Automation.Browser);
-
-            if(clickBankEnums.Equals(ClickBankEnums.AvgDollarSale))
-            {
-                marketPlacePage.ShowResultsByAvgDollarSale();
-            }
+            return marketPlacePage.GetPromotions();
         }
 
-        public void ShowResultsByInitialDollarSale(ClickBankEnums clickBankEnums)
-        {
-            MarketPlacePage marketPlacePage = new MarketPlacePage(Automation.Browser);
+        //public void  ShowResultsByPopularity(SortResultBy clickBankEnums)
+        //{
+        //    MarketPlacePage marketPlacePage = new MarketPlacePage(Automation.Browser);
 
-            if(clickBankEnums.Equals(ClickBankEnums.InitialDollarSale))
-            {
-                marketPlacePage.ShowResultsByInitialDollarSale();
-            }
-        }
+        //    if (clickBankEnums.Equals(SortResultBy.Popularity))
+        //    {
+        //        marketPlacePage.ShowResultsByPopularity();
+        //    }
+        //}
 
-        public void ShowResultsByAvgPercentSale(ClickBankEnums clickBankEnums)
-        {
-            MarketPlacePage marketPlacePage = new MarketPlacePage(Automation.Browser);
+        //public void ShowResultsByAvgDollarSale(SortResultBy clickBankEnums)
+        //{
+        //    MarketPlacePage marketPlacePage = new MarketPlacePage(Automation.Browser);
 
-            if(clickBankEnums.Equals(ClickBankEnums.AvgPercentSale))
-            {
-                marketPlacePage.ShowResultsByAvgPercentSale();
-            }
-        }
+        //    if(clickBankEnums.Equals(SortResultBy.AvgDollarSale))
+        //    {
+        //        marketPlacePage.ShowResultsByAvgDollarSale();
+        //    }
+        //}
 
-        public void ShowResultsByAvgRebillTotal(ClickBankEnums clickBankEnums)
-        {
-            MarketPlacePage marketPlacePage = new MarketPlacePage(Automation.Browser);
+        //public void ShowResultsByInitialDollarSale(SortResultBy clickBankEnums)
+        //{
+        //    MarketPlacePage marketPlacePage = new MarketPlacePage(Automation.Browser);
 
-            if(marketPlacePage.Equals(ClickBankEnums.AvgRebillTotal))
-            {
-                marketPlacePage.ShowResultsByAvgRebillTotal();
-            }
-        }
+        //    if(clickBankEnums.Equals(SortResultBy.InitialDollarSale))
+        //    {
+        //        marketPlacePage.ShowResultsByInitialDollarSale();
+        //    }
+        //}
 
-        public void ShowResultsByAvgPercentRebill(ClickBankEnums clickBankEnums)
-        {
-            MarketPlacePage marketPlacePage = new MarketPlacePage(Automation.Browser);
+        //public void ShowResultsByAvgPercentSale(SortResultBy clickBankEnums)
+        //{
+        //    MarketPlacePage marketPlacePage = new MarketPlacePage(Automation.Browser);
 
-            if(marketPlacePage.Equals(ClickBankEnums.AvgPercentRebill))
-            {
-                marketPlacePage.ShowResultsByAvgPercentRebill();
-            }
-        }
+        //    if(clickBankEnums.Equals(SortResultBy.AvgPercentSale))
+        //    {
+        //        marketPlacePage.ShowResultsByAvgPercentSale();
+        //    }
+        //}
 
-        public void ShowResultsByGravity(ClickBankEnums clickBankEnums)
-        {
-            MarketPlacePage marketPlacePage = new MarketPlacePage(Automation.Browser);
+        //public void ShowResultsByAvgRebillTotal(SortResultBy clickBankEnums)
+        //{
+        //    MarketPlacePage marketPlacePage = new MarketPlacePage(Automation.Browser);
 
-            if(marketPlacePage.Equals(ClickBankEnums.Gravity))
-            {
-                marketPlacePage.ShowResultsByGravity();
-            }
-        }
+        //    if(marketPlacePage.Equals(SortResultBy.AvgRebillTotal))
+        //    {
+        //        marketPlacePage.ShowResultsByAvgRebillTotal();
+        //    }
+        //}
+
+        //public void ShowResultsByAvgPercentRebill(SortResultBy clickBankEnums)
+        //{
+        //    MarketPlacePage marketPlacePage = new MarketPlacePage(Automation.Browser);
+
+        //    if(marketPlacePage.Equals(SortResultBy.AvgPercentRebill))
+        //    {
+        //        marketPlacePage.ShowResultsByAvgPercentRebill();
+        //    }
+        //}
+
+        //public void ShowResultsByGravity(SortResultBy clickBankEnums)
+        //{
+        //    MarketPlacePage marketPlacePage = new MarketPlacePage(Automation.Browser);
+
+        //    if(marketPlacePage.Equals(SortResultBy.Gravity))
+        //    {
+        //        marketPlacePage.ShowResultsByGravity();
+        //    }
+        //}
 
 
 

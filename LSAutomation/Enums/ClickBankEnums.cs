@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LSAutomation.Enums
 {
-    public enum ClickBankEnums
+    public enum SortResultBy
     {
         Popularity,
         AvgDollarSale,

@@ -122,9 +122,11 @@
     <Compile Include="Factories\ConfigurationFactory.cs" />
     <Compile Include="Factories\UserFactory.cs" />
     <Compile Include="Factories\XmlHelper.cs" />
+    <Compile Include="Models\ClickBank\Promote.cs" />
     <Compile Include="Models\ConfigurationInfo.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Pages\ClickBank\ClickBankHomePage.cs" />
+    <Compile Include="Pages\ClickBank\HopeLinkGenerator.cs" />
     <Compile Include="Pages\ClickBank\MarketPlacePage.cs" />
     <Compile Include="Pages\Facebook\FacebookHomePage.cs" />
     <Compile Include="Pages\HomePageBase.cs" />

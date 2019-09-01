@@ -16,4 +16,5 @@ namespace LSAutomation.Enums
         AvgPercentRebill,
         Gravity
     }
+   
 }

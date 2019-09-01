@@ -99,5 +99,4 @@ F:\GitProjects\LSAutomation\Common\bin\Debug\WebDriver.Support.xml
 F:\GitProjects\LSAutomation\Common\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
 F:\GitProjects\LSAutomation\Common\obj\Debug\Common.dll
 F:\GitProjects\LSAutomation\Common\obj\Debug\Common.pdb
-C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\Common\obj\Debug\Common.csprojAssemblyReference.cache
 F:\GitProjects\LSAutomation\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache

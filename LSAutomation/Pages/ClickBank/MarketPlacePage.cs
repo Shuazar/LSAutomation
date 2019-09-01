@@ -54,49 +54,7 @@ namespace LSAutomation.Pages.ClickBank
                 promotionList.Add(promote);
             }
             return promotionList;
-        }
-
-        //public void ShowResultsByPopularity()
-        //{
-        //    var sortField = Browser.WaitForElement(By.Id("sortField"), "sortField", 10);
-        //    sortField.SelectByValue("POPULARITY");
-        //}
-
-        //public void ShowResultsByAvgDollarSale()
-        //{
-        //    var sortField = Browser.WaitForElement(By.Id("sortField"), "sortField", 10);
-        //    sortField.SelectByValue("AVERAGE_EARNINGS_PER_SALE");
-        //}
-
-        //public void ShowResultsByInitialDollarSale()
-        //{
-        //    var sortField = Browser.WaitForElement(By.Id("sortField"), "sortField", 10);
-        //    sortField.SelectByValue("INITIAL_EARNINGS_PER_SALE");
-        //}
-
-        //public void ShowResultsByAvgPercentSale()
-        //{
-        //    var sortField = Browser.WaitForElement(By.Id("sortField"), "sortField", 10);
-        //    sortField.SelectByValue("PCT_EARNINGS_PER_SALE");
-        //}
-
-        //public void ShowResultsByAvgRebillTotal()
-        //{
-        //    var sortField = Browser.WaitForElement(By.Id("sortField"), "sortField", 10);
-        //    sortField.SelectByValue("TOTAL_REBILL");
-        //}
-
-        //public void ShowResultsByAvgPercentRebill()
-        //{
-        //    var sortField = Browser.WaitForElement(By.Id("sortField"), "sortField", 10);
-        //    sortField.SelectByValue("PCT_EARNINGS_PER_REBILL");
-        //}
-
-        //public void ShowResultsByGravity()
-        //{
-        //    var sortField = Browser.WaitForElement(By.Id("sortField"), "sortField", 10);
-        //    sortField.SelectByValue("GRAVITY");
-        //}
+        }        
 
         #region GeneratedHopLink
 

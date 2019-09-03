@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Common.BrowserFactory;
 using Common.Report;
+using DAL.Repositories;
 using LSAutomation.Factories;
 using LSAutomation.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -20,22 +21,22 @@ namespace LSAutomation
         protected static Automation Automation { get; private set; }
         protected static List<ConfigurationInfo> ConfigurationInfo { get; private set; }
         private bool TestFail = false;
+        protected ClickBankRepository ClickBankRepository;
         protected TestBase()
         {
-
+            ClickBankRepository = new ClickBankRepository();
         }
 
         [AssemblyInitialize]
         public static void AssemblyInitialize(TestContext testContext)
-        {
+        {            
             ConfigInfoFaceBook = ConfigurationFactory.GetConfigurationFaceBook();
             ConfigInfoClickBank = ConfigurationFactory.GetConfigurationClickBank();
             ReportsFolder = ReportsPathFactory.CreateTestFolderForReport(testContext.TestName, ConfigInfoFaceBook.ReportFolder);
             ConfigurationInfo = new List<ConfigurationInfo>();
             ConfigurationInfo.Add(ConfigInfoFaceBook);
             ConfigurationInfo.Add(ConfigInfoClickBank);
-
-
+           
         }
 
         [TestInitialize]

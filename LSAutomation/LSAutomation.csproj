@@ -8,7 +8,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>LSAutomation</RootNamespace>
     <AssemblyName>LSAutomation</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -16,6 +16,7 @@
     <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
     <IsCodedUITest>False</IsCodedUITest>
     <TestProjectType>UnitTest</TestProjectType>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -72,6 +73,7 @@
     <Reference Include="System.Buffers, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.3.0\lib\netstandard1.1\System.Buffers.dll</HintPath>
     </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.0.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
@@ -122,9 +124,6 @@
     <Compile Include="Factories\ConfigurationFactory.cs" />
     <Compile Include="Factories\UserFactory.cs" />
     <Compile Include="Factories\XmlHelper.cs" />
-    <Compile Include="Models\ClickBank\Promote.cs" />
-    <Compile Include="Models\ConfigurationInfo.cs" />
-    <Compile Include="Models\User.cs" />
     <Compile Include="Pages\ClickBank\ClickBankHomePage.cs" />
     <Compile Include="Pages\ClickBank\HopeLinkGenerator.cs" />
     <Compile Include="Pages\ClickBank\MarketPlacePage.cs" />
@@ -160,6 +159,10 @@
     <ProjectReference Include="..\Common\Common.csproj">
       <Project>{9de96757-fde6-4bad-9866-90148847ef4c}</Project>
       <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{254c12fd-2ac5-4cf2-a3a6-e698fcf2ca23}</Project>
+      <Name>DAL</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

@@ -1,6 +1,6 @@
 ﻿using DAL.Database;
 using LSAutomation.Models.ClickBank;
-using System;
+using System
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,17 +10,16 @@ namespace DAL.Repositories
 {
     public class ClickBankRepository
     {
-        public List<Promote> GetPromoteList()
+        public void SavePromoteList(List<Promote> promoteList)
         {
-            List<Promote> promoteList = new List<Promote>();
-
             using (var context = new ClickBankDB())
             {
-                var promoteResult = (from p in context.PromoteTable
-                                     select p).ToList();                
+                foreach (var promote in promoteList)
+                {
+                    context.PromoteTable.Add(promote);                   
+                }
+                context.SaveChanges();
             }
-
-            return promoteList;
 
         }
     }

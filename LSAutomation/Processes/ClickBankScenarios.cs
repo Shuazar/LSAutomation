@@ -22,7 +22,7 @@ namespace LSAutomation.Processes
                 Automation.MainMenuDomain.GoToArtNiche();               
                 Automation.MarketPlaceDomain.SortResultBy(SortResultBy.Gravity);
                 var promotionLinks = Automation.MarketPlaceDomain.GetPromotions();
-
+                ClickBankRepository.SavePromoteList(promotionLinks);
 
                /* Automation.MainMenuDomain.GoToSeenOnTvNiche();
                 Automation.MainMenuDomain.GoToBettingNiche();

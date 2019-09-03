@@ -120,3 +120,5 @@ C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\D
 C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\obj\Debug\LSAutomation.csproj.CopyComplete
 C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\obj\Debug\LSAutomation.dll
 C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\obj\Debug\LSAutomation.pdb
+C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\Debug\EntityFramework.SqlServer.xml

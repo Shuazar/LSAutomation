@@ -37,6 +37,7 @@ namespace LSAutomation
             ConfigurationInfo.Add(ConfigInfoFaceBook);
             ConfigurationInfo.Add(ConfigInfoClickBank);
            
+
         }
 
         [TestInitialize]

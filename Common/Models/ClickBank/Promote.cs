@@ -9,6 +9,7 @@ namespace LSAutomation.Models.ClickBank
 {
     public class Promote
     {
+        public string Category { get; set; }
         [Key]
         public string Title { get; set; }
         public string Description { get; set; }

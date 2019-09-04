@@ -10,7 +10,7 @@ namespace DAL.Repositories
 {
     public class ClickBankRepository
     {
-        Type providerService = typeof(System.Data.Entity.SqlServer.SqlProviderServices);
+       Type providerService = typeof(System.Data.Entity.SqlServer.SqlProviderServices);
         public void SavePromoteList(List<Promote> promoteList)
         {
             using (var context = new ClickBankDB())
@@ -23,5 +23,19 @@ namespace DAL.Repositories
             }
 
         }
+
+        public List<Promote> GetPromoteList()
+        {
+            var promoteList = new List<Promote>();
+
+            using (var context = new ClickBankDB())
+            {
+                 promoteList = (from p in context.PromoteTable
+                                   select p).ToList();
+            }
+            return promoteList;
+        }
     }
+
+
 }

@@ -29,11 +29,14 @@ namespace LSAutomation.Pages.ClickBank
         }
 
         public List<Promote> GetPromotions()
-        {
+        {           
             var promotionList = new List<Promote>();
+            var marketingRows = Browser.FindElements(By.CssSelector(".marketplaceStats"), "marketingRows");
             var promoteRows = Browser.WaitForElement(By.Id("results"),"Result container",20).FindElements(By.CssSelector(".result"), "Results");
+            int i = 0;
             foreach (var row in promoteRows)
             {
+               
                 var promote = new Promote();
                 row.MoveToElement();
                 promote.Title = row.WaitForElement(By.CssSelector(".recordTitle"),"").Text;
@@ -46,12 +49,21 @@ namespace LSAutomation.Pages.ClickBank
                     row.WaitForElement(By.CssSelector(".commission.averageDollarsPerSaleContent.dollar"),
                         "Commission Average").Text;
 
+
+                var category = marketingRows.ElementAt(i).WaitForElement(By.CssSelector(".stat.categoryContent"), "desc", 10).Text;
+                var startIndex = category.IndexOf(":");
+                category = category.Substring(startIndex, category.Length - startIndex).Replace(":", "");
+                promote.Category = category;
+
+                var element = row.FindElements(By.CssSelector(".stat.categoryContent"), "description");
+                
                 var hopLinkGeneratorWindow = Browser.OpenWindow(()=> row.WaitForElement(By.CssSelector(".promoteBtn"), "Button container", 10).WaitForElement(By.TagName("button"), "Button promote").Click(),"");
-                SetPromocode(hopLinkGeneratorWindow,"31234123");
+               // SetPromocode(hopLinkGeneratorWindow,"31234123");
                 GenerateHopLink(hopLinkGeneratorWindow);
                 promote.HopLink= GetHopLink(hopLinkGeneratorWindow);
                 hopLinkGeneratorWindow.Close();
                 promotionList.Add(promote);
+                i++;
             }
             return promotionList;
         }        

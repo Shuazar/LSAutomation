@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Common.Report;
 using LSAutomation.Enums;
+using DAL.Repositories;
 
 namespace LSAutomation.Processes
 {
@@ -18,6 +19,9 @@ namespace LSAutomation.Processes
         {
             ExcuteScenario(() =>
             {
+                var repository = new ClickBankRepository();
+                var list = repository.GetPromoteList();
+                var categ = list.Select(prom=>prom.Category).Distinct();
                 var user = UserFactory.GetFacebookUsers();
                 ReportManager.Report.Test.Info($"Use name {user.Username}");
                 Automation.HomeDomain.OpenHomePage(ConfigurationInfo.Where(conf => conf.Name.Equals(ConfigurationEnums.FaceBook)).FirstOrDefault());

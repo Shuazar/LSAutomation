@@ -68,8 +68,6 @@ F:\GitProjects\LSAutomation\LSAutomation\bin\Debug\WebDriver.Support.xml
 F:\GitProjects\LSAutomation\LSAutomation\obj\Debug\LSAutomation.csprojResolveAssemblyReference.cache
 F:\GitProjects\LSAutomation\LSAutomation\obj\Debug\LSAutomation.dll
 F:\GitProjects\LSAutomation\LSAutomation\obj\Debug\LSAutomation.pdb
-C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\obj\Debug\LSAutomation.csprojAssemblyReference.cache
-C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\obj\Debug\LSAutomation.csproj.CoreCompileInputs.cache
 C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\Debug\BrowserConfiguration\Chrome\BrowserConfiguration.xml
 C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\Debug\FacebookUsers\FacebookUsers.xml
 C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\Debug\WebDrivers\chromedriver.exe
@@ -96,6 +94,7 @@ C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\D
 C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\Debug\WebDriver.dll
 C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\Debug\WebDriver.Support.dll
 C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\Debug\EntityFramework.dll
+C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\Debug\Common.pdb
 C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\Debug\DAL.pdb
 C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\Debug\DAL.dll.config
@@ -117,8 +116,9 @@ C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\D
 C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\Debug\WebDriver.xml
 C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\Debug\WebDriver.Support.xml
 C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\Debug\EntityFramework.xml
+C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\obj\Debug\LSAutomation.csprojAssemblyReference.cache
+C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\obj\Debug\LSAutomation.csproj.CoreCompileInputs.cache
 C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\obj\Debug\LSAutomation.csproj.CopyComplete
 C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\obj\Debug\LSAutomation.dll
 C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\obj\Debug\LSAutomation.pdb
-C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\LSAutomation\bin\Debug\EntityFramework.SqlServer.xml

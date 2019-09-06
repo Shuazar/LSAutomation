@@ -15,7 +15,7 @@ namespace LSAutomation.Processes
     public class FaceBookScenarios : TestBase
     {
         [TestMethod]
-        public void Login()
+        public void JoinToGroup()
         {
             ExcuteScenario(() =>
             {
@@ -26,6 +26,11 @@ namespace LSAutomation.Processes
                 ReportManager.Report.Test.Info($"Use name {user.Username}");
                 Automation.HomeDomain.OpenHomePage(ConfigurationInfo.Where(conf => conf.Name.Equals(ConfigurationEnums.FaceBook)).FirstOrDefault());
                 Automation.HomeDomain.Login(user, ConfigurationInfo.Where(conf => conf.Name.Equals(ConfigurationEnums.FaceBook)).FirstOrDefault());
+
+                foreach (var category in categ)
+                {
+                    Automation.FbAccountDomain.JoinToGroup(category);
+                }
             });
 
         }

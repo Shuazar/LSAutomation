@@ -35,6 +35,31 @@ namespace DAL.Repositories
             }
             return promoteList;
         }
+
+        public void SaveFbGroups(List<FaceBookGroups> facebookGroupsList)
+        {
+            using (var context = new ClickBankDB())
+            {
+                foreach (var group in facebookGroupsList)
+                {
+                    context.FaceBookGroupsTable.Add(group);
+                }
+                context.SaveChanges();
+            }
+
+        }
+
+        public List<FaceBookGroups> GetFacebookGroups()
+        {
+            var fbGroupsList = new List<FaceBookGroups>();
+
+            using (var context = new ClickBankDB())
+            {
+                fbGroupsList = (from p in context.FaceBookGroupsTable
+                               select p).ToList();
+            }
+            return fbGroupsList;
+        }
     }
 
 

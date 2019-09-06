@@ -10,7 +10,7 @@ namespace LSAutomation.Processes
     public class ClickBankScenarios : TestBase
     {
         [TestMethod]
-        public void Login()
+        public void GetPromotions()
         {
             ExcuteScenario(() =>
             {

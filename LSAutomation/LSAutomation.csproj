@@ -117,6 +117,7 @@
     <Compile Include="Domains\ClickbankDomain\MainMenuDomain.cs" />
     <Compile Include="Domains\ClickbankDomain\MarketPlaceDomain.cs" />
     <Compile Include="Domains\DomainBase.cs" />
+    <Compile Include="Domains\FaceBookDomain\FbAccountDomain.cs" />
     <Compile Include="Domains\HomeDomain.cs" />
     <Compile Include="Enums\ClickBankEnums.cs" />
     <Compile Include="Enums\ConfigurationEnums.cs" />
@@ -128,6 +129,7 @@
     <Compile Include="Pages\ClickBank\HopeLinkGenerator.cs" />
     <Compile Include="Pages\ClickBank\MarketPlacePage.cs" />
     <Compile Include="Pages\Facebook\FacebookHomePage.cs" />
+    <Compile Include="Pages\Facebook\FbAccountPage.cs" />
     <Compile Include="Pages\HomePageBase.cs" />
     <Compile Include="Pages\HomePageFactory.cs" />
     <Compile Include="Pages\ClickBank\MainMenuPage.cs" />

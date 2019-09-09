@@ -22,12 +22,17 @@ namespace LSAutomation.Pages.Facebook
             Browser.WaitForElement(By.Id("email"), "email", 10).Text = user.Username;
             Browser.WaitForElement(By.Id("pass"), "Password", 10).Text = user.Password;
             Browser.WaitForElement(By.Id("loginbutton"), "loginbutton label",10).WaitForElement(By.TagName("input"),"button login",5 ).Click();
-           
+            ClosePopUps();
         }
 
         public override void OpenHomePage(string url)
         {
             Browser.NavigateToUrl(url);
+        }
+
+        private void ClosePopUps()
+        {
+
         }
         
         public override string GetDataSiteKey()

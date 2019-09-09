@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 
 namespace DAL.Repositories
 {
-    public class ClickBankRepository
+    public class LSAutomationRepository
     {
        Type providerService = typeof(System.Data.Entity.SqlServer.SqlProviderServices);
         public void SavePromoteList(List<Promote> promoteList)
         {
-            using (var context = new ClickBankDB())
+            using (var context = new LSAutomationDB())
             {
                 foreach (var promote in promoteList)
                 {
@@ -28,7 +28,7 @@ namespace DAL.Repositories
         {
             var promoteList = new List<Promote>();
 
-            using (var context = new ClickBankDB())
+            using (var context = new LSAutomationDB())
             {
                  promoteList = (from p in context.PromoteTable
                                    select p).ToList();
@@ -38,7 +38,7 @@ namespace DAL.Repositories
 
         public void SaveFbGroups(List<FaceBookGroups> facebookGroupsList)
         {
-            using (var context = new ClickBankDB())
+            using (var context = new LSAutomationDB())
             {
                 foreach (var group in facebookGroupsList)
                 {
@@ -53,7 +53,7 @@ namespace DAL.Repositories
         {
             var fbGroupsList = new List<FaceBookGroups>();
 
-            using (var context = new ClickBankDB())
+            using (var context = new LSAutomationDB())
             {
                 fbGroupsList = (from p in context.FaceBookGroupsTable
                                select p).ToList();

@@ -49,7 +49,7 @@ namespace LSAutomation.Pages.ClickBank
                     row.WaitForElement(By.CssSelector(".commission.averageDollarsPerSaleContent.dollar"),
                         "Commission Average").Text;
 
-
+                
                 var category = marketingRows.ElementAt(i).WaitForElement(By.CssSelector(".stat.categoryContent"), "desc", 10).Text;
                 var startIndex = category.IndexOf(":");
                 category = category.Substring(startIndex, category.Length - startIndex).Replace(":", "");

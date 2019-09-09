@@ -21,10 +21,10 @@ namespace LSAutomation
         protected static Automation Automation { get; private set; }
         protected static List<ConfigurationInfo> ConfigurationInfo { get; private set; }
         private bool TestFail = false;
-        protected ClickBankRepository ClickBankRepository;
+        protected LSAutomationRepository ClickBankRepository;
         protected TestBase()
         {
-            ClickBankRepository = new ClickBankRepository();
+            ClickBankRepository = new LSAutomationRepository();
         }
 
         [AssemblyInitialize]
@@ -63,7 +63,8 @@ namespace LSAutomation
             catch (Exception ex)
             {
                 TestFail = true;
-
+                ReportManager.Report.Fail(ex);
+                
             }
 
         }

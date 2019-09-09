@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace DAL.Database
 {
-    public class ClickBankDB : DbContext
+    public class LSAutomationDB : DbContext
     {
-        public ClickBankDB()
-             : base("name=ClickBankDb")
+        public LSAutomationDB()
+             : base("name=LSAutomationDB")
         {
 
         }

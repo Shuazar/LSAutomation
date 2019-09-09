@@ -100,3 +100,4 @@ C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\Common\obj\Debug\C
 C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\Common\obj\Debug\Common.csproj.CopyComplete
 C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\Common\obj\Debug\Common.dll
 C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\Common\obj\Debug\Common.pdb
+C:\Users\Saviel\OneDrive\שולחן העבודה\LSAutomation\Common\obj\Debug\Common.csprojAssemblyReference.cache

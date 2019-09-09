@@ -235,9 +235,9 @@ namespace Common
             ((IJavaScriptExecutor)_driver).ExecuteScript("window.scrollTo(document.body.scrollHeight,0)");
         }
 
-        public void PageDown()
+        public void PageDown(int num)
         {
-            ((IJavaScriptExecutor)_driver).ExecuteScript("window.scrollTo(document.body.scrollHeight,300)");
+            ((IJavaScriptExecutor)_driver).ExecuteScript($"window.scrollTo(document.body.scrollHeight,{num})");
         }
 
         public ReadOnlyCollection<object> GetCookiesFromJavaScript()

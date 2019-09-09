@@ -78,7 +78,7 @@ namespace Common
         {
             var elementPosition = BrowserElement.Location.Y - delta;
             string js = $"window.scroll(0, {elementPosition})";
-            Thread.Sleep(1000);
+            //Thread.Sleep(1000);
             ((IJavaScriptExecutor)BrowserElement.DOMRoot.Browser.GetWebDriver()).ExecuteScript(js);
         }
 

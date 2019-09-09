@@ -19,7 +19,7 @@ namespace LSAutomation.Processes
         {
             ExcuteScenario(() =>
             {
-                var repository = new ClickBankRepository();
+                var repository = new LSAutomationRepository();
                 var list = repository.GetPromoteList();
                 var categ = list.Select(prom=>prom.Category).Distinct();
                 var user = UserFactory.GetFacebookUsers();
@@ -30,6 +30,7 @@ namespace LSAutomation.Processes
                 foreach (var category in categ)
                 {
                     Automation.FbAccountDomain.JoinToGroup(category);
+
                 }
             });
 

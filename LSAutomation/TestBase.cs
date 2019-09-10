@@ -53,11 +53,24 @@ namespace LSAutomation
             ReportManager.Report.EndTest();
         }
 
-        protected void ExcuteScenario(Action scenario)
+        protected void ExecuteProxies(Action scenario)
         {
             try
             {
-                Automation = new Automation(ConfigurationInfo, BrowserFactory.GetBrowser());
+                Automation = new Automation(BrowserFactory.GetBrowser(""));
+                scenario();
+            }
+            catch (Exception ex)
+            {
+                TestFail = true;
+                ReportManager.Report.Fail(ex);
+            }
+        }
+        protected void ExcuteScenario(string proxy, Action scenario)
+        {
+            try
+            {
+                Automation = new Automation(ConfigurationInfo, BrowserFactory.GetBrowser(proxy));
                 scenario();
             }
             catch (Exception ex)

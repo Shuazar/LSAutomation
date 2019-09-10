@@ -26,6 +26,10 @@ namespace LSAutomation
             MarketPlaceDomain = new MarketPlaceDomain(this);
             FbAccountDomain = new FbAccountDomain(this);
         }
+        public Automation(Browser browser)
+        {
+            Browser = browser;
+        }
 
 
 

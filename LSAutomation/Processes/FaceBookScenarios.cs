@@ -17,7 +17,7 @@ namespace LSAutomation.Processes
         [TestMethod]
         public void JoinToGroup()
         {
-            ExcuteScenario(() =>
+            ExcuteScenario("85.238.167.170:51904",() =>
             {
                 var repository = new LSAutomationRepository();
                 var list = repository.GetPromoteList();

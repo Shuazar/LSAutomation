@@ -10,7 +10,7 @@ namespace Common.BrowserFactory
 {
     public class BrowserFactory
     {
-        public static Browser GetBrowser()
+        public static Browser GetBrowser(string proxy)
         {
 
             var document = XDocument.Load("BrowserConfiguration.xml");
@@ -19,7 +19,7 @@ namespace Common.BrowserFactory
             switch (browserName)
             {
                 case "Chrome":
-                    return new ChromeBrowser();
+                    return new ChromeBrowser(proxy);
                 default:
                     break;
 

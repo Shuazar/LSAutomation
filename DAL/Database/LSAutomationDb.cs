@@ -1,4 +1,5 @@
-﻿using LSAutomation.Models.ClickBank;
+﻿using Common.Models;
+using LSAutomation.Models.ClickBank;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -17,5 +18,6 @@ namespace DAL.Database
         }
         public DbSet<Promote> PromoteTable { get; set; }
         public DbSet<FaceBookGroups> FaceBookGroupsTable { get; set; }
+        public DbSet<Proxy> ProxiesTable { get; set; }
     }
 }

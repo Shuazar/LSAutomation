@@ -1,6 +1,12 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.Linq;
+using System.Net.Sockets;
+using System.Threading.Tasks;
 using Common.BrowserFactory;
+using Common.Models;
+using Common.Proxy;
 using Common.Report;
 using DAL.Repositories;
 using LSAutomation.Factories;
@@ -21,10 +27,10 @@ namespace LSAutomation
         protected static Automation Automation { get; private set; }
         protected static List<ConfigurationInfo> ConfigurationInfo { get; private set; }
         private bool TestFail = false;
-        protected LSAutomationRepository ClickBankRepository;
+        protected LSAutomationRepository LSAutomationRepository;
         protected TestBase()
         {
-            ClickBankRepository = new LSAutomationRepository();
+            LSAutomationRepository = new LSAutomationRepository();
         }
 
         [AssemblyInitialize]
@@ -66,11 +72,28 @@ namespace LSAutomation
                 ReportManager.Report.Fail(ex);
             }
         }
-        protected void ExcuteScenario(string proxy, Action scenario)
+        protected void ExcuteScenario( Action scenario)
         {
             try
             {
-                Automation = new Automation(ConfigurationInfo, BrowserFactory.GetBrowser(proxy));
+                var dal =  new LSAutomationRepository();
+                var proxyList = new List<Proxy>();
+                proxyList = dal.GetProxies();
+                
+                Proxy proxyModel = new Proxy();
+
+                foreach(var proxy in proxyList)
+                {
+                    if(proxy.ISO.Equals("RU"))                   
+                    if (PingHost(proxy.IP,Convert.ToInt32(proxy.PORT)))
+                    {
+                        proxyModel = proxy;
+                        break;
+                    }
+                }
+
+          
+                Automation = new Automation(ConfigurationInfo, BrowserFactory.GetBrowser(proxyModel.IP+": "+ proxyModel.PORT));
                 scenario();
             }
             catch (Exception ex)
@@ -81,5 +104,32 @@ namespace LSAutomation
             }
 
         }
+        //private List<TimeBoundProxy> CheckProxiesStatus(ConcurrentBag<string> _proxiesToCheck)
+        //{
+        //    Parallel.ForEach(_proxiesToCheck,
+        //        proxytocheck =>
+        //        {
+        //            if (PingHost(proxytocheck))
+        //            {
+        //                _activeproxies.Add(new TimeBoundProxy(proxytocheck));
+        //            }
+        //        });
+        //    return _activeproxies;
+        //}
+
+        private bool PingHost(string ip,int port)
+        {                       
+            bool isProxyActive;
+            try
+            {
+                var client = new TcpClient(ip, port);
+                isProxyActive = true;
+            }
+            catch (Exception)
+            {
+                isProxyActive = false;
+            }
+            return isProxyActive;
+        }       
     }
 }

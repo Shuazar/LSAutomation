@@ -38,7 +38,7 @@ namespace Common.BrowserFactory
             proxy.Kind = ProxyKind.Manual;
             proxy.IsAutoDetect = false;
             proxy.SslProxy = proxyUrl;
-            proxy.HttpProxy = proxyUrl;
+            proxy.HttpProxy = proxyUrl;          
             return proxy;
         }
     }

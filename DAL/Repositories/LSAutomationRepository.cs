@@ -1,4 +1,5 @@
-﻿using DAL.Database;
+﻿using Common.Models;
+using DAL.Database;
 using LSAutomation.Models.ClickBank;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ namespace DAL.Repositories
     public class LSAutomationRepository
     {
        Type providerService = typeof(System.Data.Entity.SqlServer.SqlProviderServices);
-        public void SavePromoteList(List<Promote> promoteList)
+        public void SavePromoteList(System.Collections.Generic.List<Promote> promoteList)
         {
             using (var context = new LSAutomationDB())
             {
@@ -59,6 +60,33 @@ namespace DAL.Repositories
                                select p).ToList();
             }
             return fbGroupsList;
+        }
+
+        public List<Proxy> GetProxies()
+        {          
+            var proxies = new List<Proxy>();
+
+            using (var context = new LSAutomationDB())
+            {
+                        
+                proxies = (from p in context.ProxiesTable
+                           select p).ToList();
+                
+            }
+            return proxies;
+        }
+
+        public void SaveProxies(List<Proxy> proxies)
+        {
+            using (var context = new LSAutomationDB())
+            {
+                foreach (var proxy in proxies)
+                {
+                    context.ProxiesTable.Add(proxy);
+                }
+                context.SaveChanges();
+            }
+
         }
     }
 
